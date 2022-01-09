@@ -1,3 +1,70 @@
-h1 {
-    color: red;
+.circle{
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 35%;
+    background: dodgerblue;
+    border-radius: 50%;
+    width: 200px;
+    height: 170px;
+    border: 1px solid dimgray;
 }
+
+.label {
+    font-family: 'Snell Roundhand',serif;
+    position: absolute; left: 50px; top:100px;
+    color: black;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.display {
+    font-family: 'Helvetica',serif;
+    font-size: 30px;
+    position:absolute; left: 12px; top:65px;
+    width: 170px;
+    background-color: lightgrey;
+    text-align: center;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+@keyframes PULSE{
+    0%{color:darkgray;}
+    100%{color: black;}
+}
+
+.button {
+    background-color: darkgray;
+    width: 20px;
+    height: 30px;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: 1s;
+    border-radius: 20%;
+    border: 1px solid dimgray;
+
+}
+.button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#buttonMode{
+    position: absolute; right: 5px; top:20px;
+    transform: rotate(-35deg);
+}
+
+#buttonIncrease{
+    position: absolute; right: 5px; top:120px;
+    transform: rotate(35deg);
+}
+
+#buttonLight{
+    position: absolute; left: 5px; top:120px;
+    transform: rotate(-35deg);
+}
+
+

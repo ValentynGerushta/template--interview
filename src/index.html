@@ -8,6 +8,21 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-    <h1>Title</h1>
+    <section class="circle">
+        <h1 class = "label">GEwatch</h1>
+        <div id="display" class="display">
+            <span id="timeHour" class="time hour">00</span>
+            <b class="colon">:</b>
+            <span id="timeMin" class="time min">00</span>
+            <b class="colon">:</b>
+            <span id="timeSec" class="time sec">00</span>
+        </div>
+        <div class="controls">
+            <button id="buttonMode" class="button mode">M</button>
+            <button id="buttonIncrease" class="button increase">+</button>
+            <button id="buttonLight" class="button light">L</button>
+        </div>
+    </section>
+    <script src="src/index.ts"></script>
 </body>
 </html>
