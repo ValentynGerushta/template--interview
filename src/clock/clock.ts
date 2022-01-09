@@ -1,6 +1,7 @@
 export enum Edit {
-  Hour = 0,
-  Minute
+  None = 0,
+  Hour = 1,
+  Minute = 2
 }
 
 export class Clock {
@@ -59,7 +60,7 @@ export class Clock {
     }
     else if(this.mode === Edit.Minute){
       this.deltaMinutes += 1;
-      this.deltaHours %= 60; // 1h = 60min
+      this.deltaMinutes %= 60; // 1h = 60min
     }
   }
 }
